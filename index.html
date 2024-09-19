@@ -50,14 +50,15 @@
     <div class="form-container">
         <h2>We'd love to hear from you!</h2>
         <p>Please fill out this short questionnaire to help us improve:</p>
-
-        <form name="questionnaire" method="POST" netlify">
+        <form name="questionnaire" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="questionnaire" />
+            <p class="hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required aria-label="Your name">
-
             <label for="email">Your Email</label>
             <input type="email" id="email" name="email" placeholder="example@example.com" required aria-label="Your email">
-
             <label for="satisfaction">How satisfied are you with our service?</label>
             <select id="satisfaction" name="satisfaction" aria-label="Satisfaction level">
                 <option value="very-satisfied">Very Satisfied</option>
@@ -66,17 +67,16 @@
                 <option value="unsatisfied">Unsatisfied</option>
                 <option value="very-unsatisfied">Very Unsatisfied</option>
             </select>
-
             <label for="feedback">Additional Comments</label>
             <textarea id="feedback" name="feedback" rows="4" placeholder="Your comments here..." aria-label="Additional comments"></textarea>
-
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
-
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
             alert('Thank you for submitting the form!');
+            // You can add AJAX submission here if needed
         });
     </script>
 </body>
