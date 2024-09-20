@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/"
+  to = "/thank-you.html"
+  status = 200
+  conditions = { "Form-Name" = "MJ Medical Client Feedback Survey" }
