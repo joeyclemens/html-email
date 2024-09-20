@@ -45,44 +45,42 @@ p {
 }
 
 .options {
-    margin-bottom: 20px; /* Added margin to create spacing */
+    margin-bottom: 20px;
 }
 
 .table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px; /* Added margin for spacing */
+    margin-bottom: 20px;
 }
 
 .table th, .table td {
-    border: 1px solid #ddd; /* Border for the table cells */
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
 
 .table th {
-    background-color: #638098; /* Header background color */
-    color: white; /* Header text color */
+    background-color: #638098;
+    color: white;
 }
 
 .table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Alternating row colors */
+    background-color: #f2f2f2;
 }
 
 button {
-    /* Apply your button styles here */
-    display: block; /* Block for full width */
-    width: 100%; /* Full width */
+    display: block;
+    width: 100%;
     padding: 10px 20px;
     background-color: #638098;
     color: #ffffff;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;
-    cursor: pointer; /* Change cursor on hover */
+    cursor: pointer;
 }
-
 
 .footer {
     margin-top: 30px;
@@ -92,48 +90,48 @@ button {
 }
 
 textarea.charity-input {
-    width: 80%; /* Full width inside the container */
-    padding: 10px; /* Add padding for better text spacing */
-    border: 2px solid #638098; /* Border with your theme color */
-    border-radius: 8px; /* Smooth, rounded corners */
-    background-color: #f9f9f9; /* Light background for contrast */
-    font-family: Arial, sans-serif; /* Consistent font */
-    font-size: 16px; /* Slightly larger text */
-    color: #333; /* Text color */
-    resize: vertical; /* Allow vertical resizing only */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
-    margin-bottom: 20px; /* Add margin to separate from other elements */
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #638098;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    resize: vertical;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 textarea.charity-input:focus {
-    outline: none; /* Remove default outline */
-    border-color: #4a6a7f; /* Darker border color on focus */
-    background-color: #fff; /* Brighten background on focus */
-    box-shadow: 0 0 6px rgba(99, 128, 152, 0.4); /* Add glowing effect */
+    outline: none;
+    border-color: #4a6a7f;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(99, 128, 152, 0.4);
 }
 
 input.charity-input {
-    width: 80%; /* Full width inside the container */
-    padding: 10px; /* Add padding for better text spacing */
-    border: 2px solid #638098; /* Border with your theme color */
-    border-radius: 8px; /* Smooth, rounded corners */
-    background-color: #f9f9f9; /* Light background for contrast */
-    font-family: Arial, sans-serif; /* Consistent font */
-    font-size: 16px; /* Slightly larger text */
-    color: #333; /* Text color */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
-    margin-bottom: 20px; /* Add margin to separate from other elements */
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #638098;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 input.charity-input::placeholder {
-    color: #aaa; /* Placeholder text color */
+    color: #aaa;
 }
 
 input.charity-input:focus {
-    outline: none; /* Remove default outline */
-    border-color: #4a6a7f; /* Darker border color on focus */
-    background-color: #fff; /* Brighten background on focus */
-    box-shadow: 0 0 6px rgba(99, 128, 152, 0.4); /* Add glowing effect */
+    outline: none;
+    border-color: #4a6a7f;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(99, 128, 152, 0.4);
 }
 
 :root {
@@ -145,7 +143,6 @@ input.charity-input:focus {
 *:after {
     box-sizing: border-box;
 }
-
 
 input[type="radio"] {
     -webkit-appearance: none;
@@ -161,7 +158,7 @@ input[type="radio"] {
     border: 0.15em solid currentColor;
     border-radius: 50%;
     transform: translateY(-0.075em);
-    transition: border-color 0.2s; /* Smooth border color transition */
+    transition: border-color 0.2s;
 }
 
 input[type="radio"]::before {
@@ -178,14 +175,59 @@ input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
-/* Optional: Add hover effect */
 input[type="radio"]:hover {
     border-color: var(--form-control-color);
 }
 
 .separator {
-    border: none; /* Remove default styling */
-    height: 2px; /* Height of the line */
-    background-color: #638098; /* Your specified color */
-    margin: 20px 0; /* Margin for spacing above and below */
+    border: none;
+    height: 2px;
+    background-color: #638098;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .table thead {
+        display: none;
+    }
+    
+    .table tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .table td:first-child {
+        font-weight: bold;
+        text-align: left;
+        padding-left: 6px;
+        margin-bottom: 5px;
+        border-bottom: none;
+    }
+
+    .table td:first-child:before {
+        content: none;
+    }
 }
