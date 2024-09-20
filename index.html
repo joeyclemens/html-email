@@ -21,7 +21,7 @@
             
             <div class="question">To what extent would you agree that you associate MJ Medical with high quality outputs?</div>
             <div class="options">
-                <label><input type="radio" name="quality" value="strongly_agree" required> Strongly agree</label><br>
+                <label ><input type="radio" name="quality" value="strongly_agree" required> Strongly agree</label><br>
                 <label><input type="radio" name="quality" value="agree"> Agree</label><br>
                 <label><input type="radio" name="quality" value="disagree"> Disagree</label><br>
                 <label><input type="radio" name="quality" value="strongly_disagree"> Strongly disagree</label>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="question">How would you score MJ Medical on the following:</div>
-            <table>
+            <table class="table">
                 <tr>
                     <th></th>
                     <th>Excellent</th>
@@ -53,6 +53,8 @@
                     <th>Poor</th>
                     <th>Very Poor</th>
                 </tr>
+
+
                 <tr>
                     <td>Reliability</td>
                     <td><input type="radio" name="reliability" value="excellent"></td>
@@ -126,7 +128,7 @@
             <div class="question">Which charity would you like your donation to be made to?</div>
             <input type="text" class="charity-input" name="charity_name" placeholder="Charity Name" required>
 
-            <button type="submit">Submit Feedback</button>
+            <button type="submit" class="button">Submit Feedback</button>
         </form>
 
         <div class="thank-you">Many thanks for your response!</div>
