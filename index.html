@@ -79,8 +79,206 @@
             <input type="hidden" name="form-name" value="MJ Medical Client Feedback Survey">
             <input type="text" name="bot-field" style="display:none;" aria-hidden="true">
 
-            <p>Dear ?????,</p>
-            <p>We would like to review our work on the ???? project with you, and would be grateful if you could share your experience of working with MJ Medical by undertaking a short client feedback survey. As a thank you for your feedback, we will make a £100 donation to a charity of your choice.</p>
+           <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Medical Client Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p {
+            margin: 15px 0;
+        }
+        .question {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        input[type="radio"] {
+            margin: 0 10px;
+        }
+        .charity-input {
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 100%;
+        }
+        .thank-you {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image001.png" alt="MJ Medical Logo" style="display: block; margin: 0 auto; max-width: 150px; height: auto;">
+        
+        <h2>MJ Medical Client Feedback Survey</h2>
+        <form netlify data-netlify="true" action="thankyou.html" name="MJ Medical Client Feedback Survey" method="POST" action="/">
+            <input type="hidden" name="form-name" value="MJ Medical Client Feedback Survey">
+            <input type="text" name="bot-field" style="display:none;" aria-hidden="true">
+
+            <p>Dear Valued Client,</p>
+            <p>We would like to review our work on your recent project with you, and would be grateful if you could share your experience of working with MJ Medical by undertaking a short client feedback survey. As a thank you for your feedback, we will make a £100 donation to a charity of your choice.</p>            <p>This survey should take no more than 5 minutes of your time, and the information will be used internally to help us improve our services. Any opinions you give will be treated in the strictest confidence, and will not be shared with the MJ Medical project team you are working with unless you explicitly request it.</p>
+            
+            <div class="question">To what extent would you agree that you associate MJ Medical with high quality outputs?</div>
+            <div class="options">
+                <label><input type="radio" name="quality" value="strongly_agree" required> Strongly agree</label><br>
+                <label><input type="radio" name="quality" value="agree"> Agree</label><br>
+                <label><input type="radio" name="quality" value="disagree"> Disagree</label><br>
+                <label><input type="radio" name="quality" value="strongly_disagree"> Strongly disagree</label>
+            </div>
+
+            <div class="question">To what extent would you agree that you associate MJ Medical with professionalism?</div>
+            <div class="options">
+                <label><input type="radio" name="professionalism" value="strongly_agree" required> Strongly agree</label><br>
+                <label><input type="radio" name="professionalism" value="agree"> Agree</label><br>
+                <label><input type="radio" name="professionalism" value="disagree"> Disagree</label><br>
+                <label><input type="radio" name="professionalism" value="strongly_disagree"> Strongly disagree</label>
+            </div>
+
+            <div class="question">To what extent would you agree that you associate MJ Medical with value for money?</div>
+            <div class="options">
+                <label><input type="radio" name="value_for_money" value="strongly_agree" required> Strongly agree</label><br>
+                <label><input type="radio" name="value_for_money" value="agree"> Agree</label><br>
+                <label><input type="radio" name="value_for_money" value="disagree"> Disagree</label><br>
+                <label><input type="radio" name="value_for_money" value="strongly_disagree"> Strongly disagree</label>
+            </div>
+
+            <div class="question">How would you score MJ Medical on the following:</div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Excellent</th>
+                    <th>Good</th>
+                    <th>Average</th>
+                    <th>Poor</th>
+                    <th>Very Poor</th>
+                </tr>
+                <tr>
+                    <td>Reliability</td>
+                    <td><input type="radio" name="reliability" value="excellent"></td>
+                    <td><input type="radio" name="reliability" value="good"></td>
+                    <td><input type="radio" name="reliability" value="average"></td>
+                    <td><input type="radio" name="reliability" value="poor"></td>
+                    <td><input type="radio" name="reliability" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Knowledge and technical skills</td>
+                    <td><input type="radio" name="skills" value="excellent"></td>
+                    <td><input type="radio" name="skills" value="good"></td>
+                    <td><input type="radio" name="skills" value="average"></td>
+                    <td><input type="radio" name="skills" value="poor"></td>
+                    <td><input type="radio" name="skills" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Communication during the project</td>
+                    <td><input type="radio" name="communication" value="excellent"></td>
+                    <td><input type="radio" name="communication" value="good"></td>
+                    <td><input type="radio" name="communication" value="average"></td>
+                    <td><input type="radio" name="communication" value="poor"></td>
+                    <td><input type="radio" name="communication" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Problem solving</td>
+                    <td><input type="radio" name="problem_solving" value="excellent"></td>
+                    <td><input type="radio" name="problem_solving" value="good"></td>
+                    <td><input type="radio" name="problem_solving" value="average"></td>
+                    <td><input type="radio" name="problem_solving" value="poor"></td>
+                    <td><input type="radio" name="problem_solving" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Team work</td>
+                    <td><input type="radio" name="team_work" value="excellent"></td>
+                    <td><input type="radio" name="team_work" value="good"></td>
+                    <td><input type="radio" name="team_work" value="average"></td>
+                    <td><input type="radio" name="team_work" value="poor"></td>
+                    <td><input type="radio" name="team_work" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Responsiveness</td>
+                    <td><input type="radio" name="responsiveness" value="excellent"></td>
+                    <td><input type="radio" name="responsiveness" value="good"></td>
+                    <td><input type="radio" name="responsiveness" value="average"></td>
+                    <td><input type="radio" name="responsiveness" value="poor"></td>
+                    <td><input type="radio" name="responsiveness" value="very_poor"></td>
+                </tr>
+                <tr>
+                    <td>Meeting deadlines</td>
+                    <td><input type="radio" name="deadlines" value="excellent"></td>
+                    <td><input type="radio" name="deadlines" value="good"></td>
+                    <td><input type="radio" name="deadlines" value="average"></td>
+                    <td><input type="radio" name="deadlines" value="poor"></td>
+                    <td><input type="radio" name="deadlines" value="very_poor"></td>
+                </tr>
+            </table>
+            
+            <div class="question">Would you recommend our services to others?</div>
+            <div class="options">
+                <label><input type="radio" name="recommend" value="yes" required> Yes</label><br>
+                <label><input type="radio" name="recommend" value="no"> No</label>
+            </div>
+
+            <div class="question">If no, please let us know how you felt we could have improved our services:</div>
+            <textarea class="charity-input" name="improvements" rows="4"></textarea>
+
+            <div class="question">What could MJ Medical do to improve our services?</div>
+            <textarea class="charity-input" name="service_improvements" rows="4"></textarea>
+
+            <div class="question">Which charity would you like your donation to be made to?</div>
+            <input type="text" class="charity-input" name="charity_name" placeholder="Charity Name" required>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div class="thank-you">Many thanks for your response!</div>
+        <div class="footer">Kind regards,<br>Nicki</div>
+    </div>
+</body>
+</html>
+
             <p>This survey should take no more than 5 minutes of your time, and the information will be used internally to help us improve our services. Any opinions you give will be treated in the strictest confidence, and will not be shared with the MJ Medical project team you are working with unless you explicitly request it.</p>
             
             <div class="question">To what extent would you agree that you associate MJ Medical with high quality outputs?</div>
