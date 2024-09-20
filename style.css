@@ -187,13 +187,12 @@ input[type="radio"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+
+    /* Existing mobile table styles */
     .table, .table tbody, .table tr, .table td {
         display: block;
         width: 100%;
-    }
-    
-    .table thead {
-        display: none;
     }
     
     .table tr {
@@ -229,5 +228,13 @@ input[type="radio"]:hover {
 
     .table td:first-child:before {
         content: none;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table-header {
+        display: none;
     }
 }
