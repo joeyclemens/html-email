@@ -177,3 +177,10 @@ input[type="radio"]:checked::before {
 input[type="radio"]:hover {
     border-color: var(--form-control-color);
 }
+
+.separator {
+    border: none; /* Remove default styling */
+    height: 2px; /* Height of the line */
+    background-color: #638098; /* Your specified color */
+    margin: 20px 0; /* Margin for spacing above and below */
+}
