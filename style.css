@@ -224,6 +224,9 @@ input[type="radio"]:hover {
         padding-left: 6px;
         margin-bottom: 5px;
         border-bottom: none;
+        background-color: #638098;
+        color: white;
+        padding: 10px;
     }
 
     .table td:first-child:before {
